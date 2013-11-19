@@ -1,0 +1,145 @@
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700italic);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  /* 16px */
+  color: black;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  line-height: 26px;
+  line-height: 1.625rem; }
+
+/* Fonts */
+/* Basic */
+/* Headings */
+/* Body */
+/* Links */
+/* Lists */
+/* Mobile and Tablet */
+.grid {
+  max-width: 960px;
+  margin: 0 auto; }
+  .grid .col-1, .grid .col-2, .grid .col-3, .grid .col-4, .grid .col-5, .grid .col-6, .grid .col-7,
+  .grid .col-8, .grid .col-9, .grid .col-10, .grid .col-11, .grid .col-12 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left; }
+  .grid .col-1 {
+    width: 8.333%; }
+  .grid .col-2 {
+    width: 16.666%; }
+  .grid .col-3 {
+    width: 24.999%; }
+  .grid .col-4 {
+    width: 33.332%; }
+  .grid .col-5 {
+    width: 41.665%; }
+  .grid .col-6 {
+    width: 49.998%; }
+  .grid .col-7 {
+    width: 58.331%; }
+  .grid .col-8 {
+    width: 66.664%; }
+  .grid .col-9 {
+    width: 74.997%; }
+  .grid .col-10 {
+    width: 83.333%; }
+  .grid .col-11 {
+    width: 91.663%; }
+  .grid .col-12 {
+    width: 100%; }
+
+.pad {
+  padding: 30px 30px; }
+
+.pad-h {
+  padding: 0 30px; }
+
+.small-pad {
+  padding: 14px 30px; }
+
+.clearfix, .grid {
+  zoom: 1; }
+  .clearfix:before, .grid:before, .clearfix:after, .grid:after {
+    zoom: 1;
+    display: table;
+    content: ''; }
+  .clearfix:after, .grid:after {
+    clear: both; }
+
+img {
+  max-width: 100%; }
+
+.inline-block {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+.article-one {
+  background-color: #cdc9dd; }
+  .article-one h1 {
+    color: white; }
+  .article-one h3 {
+    font-family: "Lora", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 36px;
+    font-size: 2.25rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #5f5d66;
+    margin-bottom: 26px; }
+  .article-one p {
+    font-family: "Lora", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 27px;
+    line-height: 1.6875rem; }
