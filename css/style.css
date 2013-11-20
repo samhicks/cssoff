@@ -1,4 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Lora:400,700italic);
+@import url(http://fonts.googleapis.com/css?family=Lora:700italic,400italic);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:900,400,300);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Lato);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -63,6 +66,11 @@ body {
 /* Headings */
 /* Body */
 /* Links */
+a {
+  text-decoration: none; }
+  a:hover, a:focus {
+    transition: 0.1s; }
+
 /* Lists */
 /* Mobile and Tablet */
 .grid {
@@ -108,13 +116,13 @@ body {
 .small-pad {
   padding: 14px 30px; }
 
-.clearfix, .grid {
+.clearfix, .grid, .article-4 .bullet-list {
   zoom: 1; }
-  .clearfix:before, .grid:before, .clearfix:after, .grid:after {
+  .clearfix:before, .grid:before, .article-4 .bullet-list:before, .clearfix:after, .grid:after, .article-4 .bullet-list:after {
     zoom: 1;
     display: table;
     content: ''; }
-  .clearfix:after, .grid:after {
+  .clearfix:after, .grid:after, .article-4 .bullet-list:after {
     clear: both; }
 
 img {
@@ -125,21 +133,251 @@ img {
   *display: inline;
   *zoom: 1; }
 
-.article-one {
-  background-color: #cdc9dd; }
-  .article-one h1 {
+.article-1 {
+  background-color: #cdc9dd;
+  text-align: center; }
+  .article-1 h1 {
     color: white; }
-  .article-one h3 {
+  .article-1 h3 {
     font-family: "Lora", "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 36px;
     font-size: 2.25rem;
-    font-weight: bold;
+    font-weight: 700;
     font-style: italic;
     color: #5f5d66;
     margin-bottom: 26px; }
-  .article-one p {
-    font-family: "Lora", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  .article-1 p {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #6e6c77;
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 27px;
     line-height: 1.6875rem; }
+
+.article-2 h6, .article-2 h2 {
+  text-transform: uppercase; }
+.article-2 h6 {
+  font-family: "Merriweather", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  color: #cbb8a0; }
+.article-2 h2 {
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 75px;
+  font-size: 4.6875rem;
+  line-height: 79px;
+  line-height: 4.9375rem;
+  color: #fdcd84;
+  margin-bottom: 28px; }
+.article-2 p {
+  font-family: "Merriweather", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-weight: 300;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  line-height: 33px;
+  line-height: 2.0625rem; }
+
+.article-3 {
+  text-align: right;
+  padding: 0 18px; }
+  .article-3 h4 {
+    font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 21px;
+    font-size: 1.3125rem;
+    color: #24795a;
+    margin-bottom: 12px; }
+  .article-3 p {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 19px;
+    line-height: 1.1875rem;
+    color: #464646; }
+
+.article-4 h4 {
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: #e5e5e5;
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  color: #a97d35;
+  text-align: center;
+  padding: 16px 0; }
+  .article-4 h4 span {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-size: 0.75rem;
+    color: #e0c167; }
+.article-4 .bullet-list li {
+  width: 20%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left; }
+  .article-4 .bullet-list li.remington, .article-4 .bullet-list li.winchester {
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 34px;
+    line-height: 2.125rem; }
+    .article-4 .bullet-list li.remington .large, .article-4 .bullet-list li.winchester .large {
+      font-size: 32px;
+      font-size: 2rem;
+      line-height: 35px;
+      line-height: 2.1875rem; }
+    .article-4 .bullet-list li.remington .xlarge, .article-4 .bullet-list li.winchester .xlarge {
+      font-size: 79px;
+      font-size: 4.9375rem; }
+  .article-4 .bullet-list li.russian {
+    font-size: 31px;
+    font-size: 1.9375rem;
+    line-height: 45px;
+    line-height: 2.8125rem; }
+    .article-4 .bullet-list li.russian .large {
+      font-size: 39px;
+      font-size: 2.4375rem;
+      line-height: 40px;
+      line-height: 2.5rem; }
+    .article-4 .bullet-list li.russian .xlarge {
+      font-size: 40px;
+      font-size: 2.5rem;
+      line-height: 44px;
+      line-height: 2.75rem; }
+  .article-4 .bullet-list li.thumper-220 {
+    font-size: 38px;
+    font-size: 2.375rem;
+    line-height: 41px;
+    line-height: 2.5625rem; }
+    .article-4 .bullet-list li.thumper-220 .large {
+      font-size: 40px;
+      font-size: 2.5rem; }
+    .article-4 .bullet-list li.thumper-220 .xlarge {
+      font-size: 87px;
+      font-size: 5.4375rem;
+      line-height: 42px;
+      line-height: 2.625rem; }
+  .article-4 .bullet-list li.thumper-240 {
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 39px;
+    line-height: 2.4375rem; }
+    .article-4 .bullet-list li.thumper-240 .large {
+      font-size: 38px;
+      font-size: 2.375rem;
+      line-height: 43px;
+      line-height: 2.6875rem; }
+    .article-4 .bullet-list li.thumper-240 .xlarge {
+      font-size: 87px;
+      font-size: 5.4375rem;
+      line-height: 42px;
+      line-height: 2.625rem; }
+  .article-4 .bullet-list li p {
+    color: #e5e5e5;
+    font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center; }
+    .article-4 .bullet-list li p .gr {
+      text-transform: lowercase; }
+
+.article-5 {
+  color: white; }
+  .article-5 h3 {
+    font-size: 49px;
+    font-size: 3.0625rem;
+    line-height: 79px;
+    line-height: 4.9375rem;
+    font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    background-color: #524741;
+    text-align: center; }
+  .article-5 figure {
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 35px;
+    line-height: 2.1875rem;
+    font-family: "Merriweather", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: 300;
+    background-color: #71625a; }
+    .article-5 figure figcaption {
+      padding: 22px 22px 30px; }
+    .article-5 figure .resource {
+      display: block;
+      font-size: 18px;
+      font-size: 1.125rem;
+      color: #c1bbb9;
+      margin-top: 35px; }
+      .article-5 figure .resource:hover, .article-5 figure .resource:focus {
+        color: white; }
+
+.article-6 {
+  background: transparent url("../images/immigration.jpg") 0 0 no-repeat;
+  padding-top: 170px; }
+  .article-6 h3, .article-6 h4 {
+    font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 79px;
+    line-height: 4.9375rem; }
+  .article-6 h3 {
+    text-transform: uppercase;
+    font-size: 82px;
+    font-size: 5.125rem;
+    padding-bottom: 20px;
+    border-bottom: 20px solid black; }
+  .article-6 h4 {
+    font-size: 39px;
+    font-size: 2.4375rem;
+    line-height: 79px;
+    line-height: 4.9375rem;
+    border-bottom: 3px solid black;
+    margin-bottom: 16px; }
+  .article-6 ul {
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 29px;
+    line-height: 1.8125rem;
+    font-family: "Merriweather", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: 300; }
+    .article-6 ul li {
+      display: inline; }
+    .article-6 ul b {
+      font-weight: 900; }
+
+.article-7 {
+  padding: 13px 0 0 13px; }
+  .article-7 .inner {
+    background-color: #3a83bb;
+    color: white;
+    padding: 0 13px 28px; }
+  .article-7 h4 {
+    font-size: 21px;
+    font-size: 1.3125rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+    font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    border-bottom: 10px solid #619cc8;
+    margin-bottom: 15px; }
+    .article-7 h4 .large {
+      font-size: 31px;
+      font-size: 1.9375rem; }
+  .article-7 .overview {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 24px;
+    line-height: 1.5rem;
+    font-family: "Lora", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 24px; }
+  .article-7 .hr-dash-top {
+    border-style: dashed none solid;
+    border-color: #234f70 transparent #3476a8;
+    border-width: 2px 0 5px; }
+  .article-7 .hr-solid-top {
+    border-style: solid none dashed;
+    border-color: #3476a8 transparent #234f70;
+    border-width: 5px 0 2px; }
+  .article-7 .rotten {
+    font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }

@@ -1,7 +1,10 @@
 // Typography
 
 /* Fonts */
-@import url(http://fonts.googleapis.com/css?family=Lora:400,700italic);
+@import url(http://fonts.googleapis.com/css?family=Lora:700italic,400italic);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:900,400,300);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Lato);
 
 /* Basic */
 
@@ -10,6 +13,13 @@
 /* Body */
 
 /* Links */
+a {
+	text-decoration: none;
+
+	&:hover, &:focus {
+		transition: 0.1s;
+	}
+}
 
 /* Lists */
 

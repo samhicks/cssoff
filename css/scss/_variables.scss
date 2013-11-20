@@ -2,12 +2,6 @@
 
 // Colors
 $white: #fff;
-$grey: #e9e7eb;
-$pink: #a0728e;
-$mid-grey: #555;
-$dark-grey: #444;
-$dark-pink: #583a51;
-$teal: #447979;
 $black: #000;
 
 // Typography
@@ -27,6 +21,9 @@ $heading-tertiary-font-size: 18px;
 $heading-tertiary-line-height: 22px;
 
 $font-lora: 'Lora', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+$font-merriweather: 'Merriweather', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+$font-oswald: 'Oswald', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-lato: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
 $body-font: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Margin
@@ -44,7 +41,32 @@ $break-mobile-landscape: 480px;
 // Page Width
 $max-page-width: 960px;
 
-// Article One
+// Article 1
+$a1-purple-heading: #5f5d66;
+$a1-purple-body: #6e6c77;
+$a1-light-purple: #cdc9dd;
 
-$purple: #5f5d66;
-$light-purple: #cdc9dd;
+// Article 2
+$a2-beige: #cbb8a0;
+$a2-mustard: #fdcd84;
+
+// Article 3
+$a3-green: #24795a;
+$a3-grey: #464646;
+
+// Article 4
+$a4-grey-rule: #e5e5e5;
+$a4-gold: #a97d35;
+$a4-cream: #e0c167;
+$a4-grey-body: #e0e0e0;
+
+// Article 5
+$a5-brown: #524741;
+$a5-light-brown: #71625a;
+$a5-grey: #c1bbb9;
+
+// Article 7
+$a7-blue: #3a83bb;
+$a7-light-blue: #619cc8;
+$a7-dark-blue: #234f70;
+$a7-mid-blue: #3476a8;
