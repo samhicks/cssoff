@@ -26,6 +26,24 @@
 }
 
 .article-2 {
+	padding-top: 140px;
+	position: relative;
+
+	h5 {
+		font-family: $font-lora;
+		@include rem(font-size, 12px);
+		font-style: italic;
+		text-transform: uppercase;
+		color: $a2-purple;
+		text-align: right;
+		margin-bottom: 380px;
+	}
+
+	img {
+		position: absolute;
+		top: 160px;
+		right: -90px;
+	}
 
 	h6, h2 {
 		text-transform: uppercase;
@@ -55,7 +73,8 @@
 
 .article-3 {
 	text-align: right;
-	padding: 0 18px;
+	padding: 0 18px 195px;
+	position: relative;
 
 	h4 {
 		font-family: $font-oswald;
@@ -69,6 +88,12 @@
 		@include rem(font-size, 14px);
 		@include rem(line-height, 19px);
 		color: $a3-grey;
+	}
+
+	.wellington {
+		position: absolute;
+		left: 7px;
+		bottom: -20px;
 	}
 }
 
@@ -84,6 +109,7 @@
 		color: $a4-gold;
 		text-align: center;
 		padding: 16px 0;
+		margin-bottom: 15px;
 
 		span {
 			font-family: $font-lato;
@@ -96,11 +122,24 @@
 		@extend .clearfix;
 
 		li {
+			border-right: 1px solid $a4-grey-rule;
 			width: 20%;
 			@include box-sizing(border-box);
 			float: left;
+			position: relative;
+			padding-bottom: 30px;
+
+			img {
+				position: absolute;
+				left: 26%;
+			}
+
+			&:last-child {
+				border: none;
+			}
 
 			&.remington, &.winchester {
+				padding-top: 250px;
 				@include rem(font-size, 28px);
 				@include rem(line-height, 34px);
 
@@ -112,9 +151,28 @@
 				.xlarge {
 					@include rem(font-size, 79px);
 				}
+
+				img {
+
+				}
+			}
+
+			&.remington {
+
+				img {
+					top: 50px;
+				}
+			}
+
+			&.winchester {
+
+				img {
+					top: 5px;
+				}
 			}
 
 			&.russian {
+				padding-top: 250px;
 				@include rem(font-size, 31px);
 				@include rem(line-height, 45px);
 
@@ -127,9 +185,14 @@
 					@include rem(font-size, 40px);
 					@include rem(line-height, 44px);
 				}
+
+				img {
+					top: 60px;
+				}
 			}
 
 			&.thumper-220 {
+				padding-top: 239px;
 				@include rem(font-size, 38px);
 				@include rem(line-height, 41px);
 
@@ -141,9 +204,14 @@
 					@include rem(font-size, 87px);
 					@include rem(line-height, 42px);
 				}
+
+				img {
+					top: 60px;
+				}
 			}
 
 			&.thumper-240 {
+				padding-top: 239px;
 				@include rem(font-size, 32px);
 				@include rem(line-height, 39px);
 
@@ -156,6 +224,10 @@
 					@include rem(font-size, 87px);
 					@include rem(line-height, 42px);
 				}
+
+				img {
+					top: 50px;
+				}
 			}
 
 			p {
@@ -164,7 +236,7 @@
 				text-transform: uppercase;
 				text-align: center;
 
-				.gr {
+				.lower {
 					text-transform: lowercase;
 				}
 			}
