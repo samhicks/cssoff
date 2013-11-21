@@ -253,7 +253,11 @@
 	.inner {
 		background-color: $a7-blue;
 		color: $white;
-		padding: 0 13px 28px;
+		padding-bottom: 28px;
+	}
+
+	.pad {
+		padding: 0 12px;
 	}
 
 	h4 {
@@ -292,7 +296,131 @@
 	}
 
 	.rotten {
+		@include rem(font-size, 14px);
+		@include rem(line-height, 30px);
 		font-family: $font-oswald;
 		text-transform: uppercase;
+		color: $a7-light-blue;
+
+		.rating {
+			@include rem(font-size, 32px);
+			display: block;
+		}
+
+		.percentage {
+			@include rem(font-size, 54px);
+			color: $white;
+		}
+	}
+
+	.event {
+		font-family: $font-oswald;
+		text-transform: uppercase;
+		text-align: center;
+
+		h5 {
+			color: $a7-light-blue;
+			@include rem(font-size, 14px);
+			@include rem(line-height, 32px);
+		}
+
+		.p-name {
+			@include rem(font-size, 27px);
+			@include rem(line-height, 33px);
+			color: $white;
+		}
+
+		.p-country-name {
+			@include rem(font-size, 28px);
+			@include rem(line-height, 34px);
+			color: $a7-light-blue;
+			display: block;
+		}
+
+		.dt-start {
+			@include rem(font-size, 39px);
+			@include rem(line-height, 43px);
+			color: $white;
+		}
+	}
+}
+
+.article-8 {
+	background: transparent url('../images/overflow-bkg.png') 0 0 no-repeat;
+	padding-top: 92px;
+	margin-bottom: 60px;
+
+	h3 {
+		font-family: $font-oswald;
+		text-transform: uppercase;
+		@include rem(font-size, 82px);
+		@include rem(line-height, 79px);
+		color: $a8-blue;
+		@include transform(6deg);
+		margin-left: 62px;
+		margin-bottom: 10px;
+	}
+
+	p {
+		font-family: $font-lora;
+		@include rem(font-size, 16px);
+		@include rem(line-height, 26px);
+		font-style: italic;
+		color: $a8-grey;
+		margin-bottom: 15px;
+
+		b {
+			font-weight: 700;
+		}
+
+		&.para-1 {
+			text-align: right;
+			@include transform(2deg);
+			width: 77%;
+			float: right;
+		}
+
+		&.para-2 {
+			clear: right;
+			@include transform(-1deg);
+			width: 70%;
+			margin-left: 28px;
+		}
+
+		&.para-3 {
+			clear: right;
+			@include transform(1deg);
+			width: 80%;
+			margin-left: 145px;
+		}
+	}
+}
+
+.footer {
+	border-top: 1px solid $footer-grey-rule;
+	padding: 20px 0 60px;
+
+	small {
+		font-family: $font-lato;
+		@include rem(font-size, 17px);
+		@include rem(line-height, 26px);
+		color: $footer-grey;
+	}
+
+	.highlight, .p-name {
+		color: $footer-dark-grey;
+	}
+
+	small {
+		float: left;
+	}
+
+	.h-card {
+		float: right;
+		text-align: right;
+		font-family: $font-merriweather;
+		@include rem(font-size, 13px);
+		@include rem(line-height, 19px);
+		color: $footer-grey;
 	}
 }

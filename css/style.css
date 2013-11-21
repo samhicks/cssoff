@@ -347,7 +347,9 @@ img {
   .article-7 .inner {
     background-color: #3a83bb;
     color: white;
-    padding: 0 13px 28px; }
+    padding-bottom: 28px; }
+  .article-7 .pad {
+    padding: 0 12px; }
   .article-7 h4 {
     font-size: 21px;
     font-size: 1.3125rem;
@@ -379,5 +381,129 @@ img {
     border-color: #3476a8 transparent #234f70;
     border-width: 5px 0 2px; }
   .article-7 .rotten {
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 30px;
+    line-height: 1.875rem;
     font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #619cc8; }
+    .article-7 .rotten .rating {
+      font-size: 32px;
+      font-size: 2rem;
+      display: block; }
+    .article-7 .rotten .percentage {
+      font-size: 54px;
+      font-size: 3.375rem;
+      color: white; }
+  .article-7 .event {
+    font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center; }
+    .article-7 .event h5 {
+      color: #619cc8;
+      font-size: 14px;
+      font-size: 0.875rem;
+      line-height: 32px;
+      line-height: 2rem; }
+    .article-7 .event .p-name {
+      font-size: 27px;
+      font-size: 1.6875rem;
+      line-height: 33px;
+      line-height: 2.0625rem;
+      color: white; }
+    .article-7 .event .p-country-name {
+      font-size: 28px;
+      font-size: 1.75rem;
+      line-height: 34px;
+      line-height: 2.125rem;
+      color: #619cc8;
+      display: block; }
+    .article-7 .event .dt-start {
+      font-size: 39px;
+      font-size: 2.4375rem;
+      line-height: 43px;
+      line-height: 2.6875rem;
+      color: white; }
+
+.article-8 {
+  background: transparent url("../images/overflow-bkg.png") 0 0 no-repeat;
+  padding-top: 92px;
+  margin-bottom: 60px; }
+  .article-8 h3 {
+    font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 82px;
+    font-size: 5.125rem;
+    line-height: 79px;
+    line-height: 4.9375rem;
+    color: #a5b9c5;
+    transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    /* IE 9 */
+    -webkit-transform: rotate(6deg);
+    /* Safari and Chrome */
+    margin-left: 62px;
+    margin-bottom: 10px; }
+  .article-8 p {
+    font-family: "Lora", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 26px;
+    line-height: 1.625rem;
+    font-style: italic;
+    color: #5e6c74;
+    margin-bottom: 15px; }
+    .article-8 p b {
+      font-weight: 700; }
+    .article-8 p.para-1 {
+      text-align: right;
+      transform: rotate(2deg);
+      -ms-transform: rotate(2deg);
+      /* IE 9 */
+      -webkit-transform: rotate(2deg);
+      /* Safari and Chrome */
+      width: 77%;
+      float: right; }
+    .article-8 p.para-2 {
+      clear: right;
+      transform: rotate(-1deg);
+      -ms-transform: rotate(-1deg);
+      /* IE 9 */
+      -webkit-transform: rotate(-1deg);
+      /* Safari and Chrome */
+      width: 70%;
+      margin-left: 28px; }
+    .article-8 p.para-3 {
+      clear: right;
+      transform: rotate(1deg);
+      -ms-transform: rotate(1deg);
+      /* IE 9 */
+      -webkit-transform: rotate(1deg);
+      /* Safari and Chrome */
+      width: 80%;
+      margin-left: 145px; }
+
+.footer {
+  border-top: 1px solid #e5e5e5;
+  padding: 20px 0 60px; }
+  .footer small {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-size: 1.0625rem;
+    line-height: 26px;
+    line-height: 1.625rem;
+    color: #bfbfbf; }
+  .footer .highlight, .footer .p-name {
+    color: #8d8d8d; }
+  .footer small {
+    float: left; }
+  .footer .h-card {
+    float: right;
+    text-align: right;
+    font-family: "Merriweather", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    line-height: 19px;
+    line-height: 1.1875rem;
+    color: #bfbfbf; }
