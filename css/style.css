@@ -60,6 +60,9 @@ html {
 /* Basic */
 /* Headings */
 /* Body */
+b {
+  font-weight: bold; }
+
 /* Links */
 a {
   text-decoration: none; }
@@ -593,7 +596,9 @@ a {
     font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     text-align: center; }
-    .article-7 .event h5 {
+    .article-7 .event .hidden {
+      display: none; }
+    .article-7 .event .summary {
       color: #619cc8;
       font-size: 14px;
       font-size: 0.875rem;
@@ -601,12 +606,12 @@ a {
       line-height: 0.875rem;
       background-color: #619cc8;
       margin-bottom: 5px; }
-      .article-7 .event h5 span {
+      .article-7 .event .summary .block {
         background-color: #3a83bb;
         padding: 0 10px; }
     .article-7 .event .p-location {
       display: block; }
-    .article-7 .event .p-name {
+    .article-7 .event .venue {
       font-size: 27px;
       font-size: 1.6875rem;
       line-height: 33px;
@@ -711,7 +716,7 @@ a {
     color: #8d8d8d; }
   .footer small {
     float: left; }
-  .footer .h-card {
+  .footer .vcard {
     float: right;
     text-align: right;
     font-family: "Merriweather", "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -720,3 +725,5 @@ a {
     line-height: 19px;
     line-height: 1.1875rem;
     color: #bfbfbf; }
+    .footer .vcard .org {
+      display: none; }

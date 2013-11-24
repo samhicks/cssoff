@@ -116,14 +116,18 @@
 		text-transform: uppercase;
 		text-align: center;
 
-		h5 {
+		.hidden {
+			display: none;
+		}
+
+		.summary {
 			color: $a7-light-blue;
 			@include rem(font-size, 14px);
 			@include rem(line-height, 14px);
 			background-color: $a7-light-blue;
 			margin-bottom: 5px;
 
-			span {
+			.block {
 				background-color: $a7-blue;
 				padding: 0 10px;
 			}
@@ -133,7 +137,7 @@
 			display: block;
 		}
 
-		.p-name {
+		.venue {
 			@include rem(font-size, 27px);
 			@include rem(line-height, 33px);
 			color: $white;

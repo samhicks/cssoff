@@ -19,12 +19,16 @@
 		float: left;
 	}
 
-	.h-card {
+	.vcard {
 		float: right;
 		text-align: right;
 		font-family: $font-merriweather;
 		@include rem(font-size, 13px);
 		@include rem(line-height, 19px);
 		color: $footer-grey;
+
+		.org {
+			display: none;
+		}
 	}
 }
