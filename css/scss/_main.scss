@@ -1,13 +1,8 @@
 // Main
 
 html {
-	font-family: $body-font;
 	font-size: 100%; /* 16px */
 	color: $black;
 	-webkit-text-size-adjust:100%; 
 	-ms-text-size-adjust:100%;
-}
-
-body {
-	@include rem(line-height,$body-line-height);
 }

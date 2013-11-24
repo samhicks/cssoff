@@ -1,0 +1,65 @@
+// Article 8
+
+.article-8 {
+	margin-bottom: 60px;
+	position: relative;
+	padding-top: 160px;
+
+	.overflow-head {
+		background: transparent url('../images/overflow-bkg.png') 0 center no-repeat;
+		position: absolute;
+		top: -25px;
+		height: 311px;
+		width: 1058px;
+		left: -23px;
+		padding-top: 100px;
+		@include box-sizing(border-box);
+
+		h3 {
+			font-family: $font-oswald;
+			text-transform: uppercase;
+			@include rem(font-size, 82px);
+			@include rem(line-height, 79px);
+			@include transform(6deg);
+			margin-left: 62px;
+			margin-bottom: 10px;
+			background: -webkit-linear-gradient($a8-blue, transparent);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+
+	p {
+		font-family: $font-lora;
+		@include rem(font-size, 16px);
+		@include rem(line-height, 26px);
+		font-style: italic;
+		color: $a8-grey;
+		margin-bottom: 15px;
+
+		b {
+			font-weight: 700;
+		}
+
+		&.para-1 {
+			text-align: right;
+			@include transform(2deg);
+			width: 77%;
+			float: right;
+		}
+
+		&.para-2 {
+			clear: right;
+			@include transform(-1deg);
+			width: 71%;
+			margin: 0 0 30px 20px;
+		}
+
+		&.para-3 {
+			clear: right;
+			@include transform(1deg);
+			width: 80%;
+			margin-left: 145px;
+		}
+	}
+}

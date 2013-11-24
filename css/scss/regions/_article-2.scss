@@ -1,0 +1,58 @@
+// Article 2
+
+.article-2 {
+	padding: 140px 0 40px 50px;
+	position: relative;
+
+	.inner {
+		position: relative;
+		min-height: 571px;
+
+		img {
+			position: absolute;
+			top: 0;
+			left: -185px;
+			z-index: 1;
+		}
+
+		.hgroup {
+			position: absolute;
+			z-index: 2;
+			top: 370px;
+		}
+
+		h6, h2 {
+			text-transform: uppercase;
+		}
+
+		h6 {
+			font-family: $font-merriweather;
+			@include rem(font-size, 13px);
+			color: $a2-beige;
+		}
+
+		h2 {
+			font-family: $font-oswald;
+			@include rem(font-size, 75px);
+			@include rem(line-height, 79px);
+			color: $a2-mustard;
+			margin-bottom: 28px;
+		}
+	}
+
+	h5 {
+		font-family: $font-lora;
+		@include rem(font-size, 12px);
+		font-style: italic;
+		text-transform: uppercase;
+		color: $a2-purple;
+		text-align: right;
+	}
+
+	p {
+		font-family: $font-merriweather;
+		font-weight: 300;
+		@include rem(font-size, 25px);
+		@include rem(line-height, 33px);
+	}
+}

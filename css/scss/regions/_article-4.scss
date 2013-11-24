@@ -1,0 +1,148 @@
+// Article 4
+
+.article-4 {
+
+	h4 {
+		border-style: solid;
+		border-width: 1px 0;
+		border-color: $a4-grey-rule;
+		font-family: $font-oswald;
+		@include rem(font-size, 15px);
+		text-transform: uppercase;
+		color: $a4-gold;
+		text-align: center;
+		padding: 16px 0;
+		margin-bottom: 15px;
+
+		.sub {
+			font-family: $font-lato;
+			@include rem(font-size, 12px);
+			color: $a4-cream;
+		}
+	}
+
+	.bullet-list {
+		@extend .clearfix;
+
+		li {
+			border-right: 1px solid $a4-grey-rule;
+			width: 20%;
+			@include box-sizing(border-box);
+			float: left;
+			position: relative;
+			padding-bottom: 30px;
+
+			img {
+				position: absolute;
+				left: 26%;
+			}
+
+			&:last-child {
+				border: none;
+			}
+
+			&.remington, &.winchester {
+				padding-top: 250px;
+				@include rem(font-size, 28px);
+				@include rem(line-height, 34px);
+
+				.large {
+					@include rem(font-size, 32px);
+					@include rem(line-height, 35px);
+				}
+
+				.xlarge {
+					@include rem(font-size, 79px);
+				}
+
+				img {
+
+				}
+			}
+
+			&.remington {
+
+				img {
+					top: 50px;
+				}
+			}
+
+			&.winchester {
+
+				img {
+					top: 5px;
+				}
+			}
+
+			&.russian {
+				padding-top: 250px;
+				@include rem(font-size, 31px);
+				@include rem(line-height, 45px);
+
+				.large {
+					@include rem(font-size, 39px);
+					@include rem(line-height, 40px);
+				}
+
+				.xlarge {
+					@include rem(font-size, 40px);
+					@include rem(line-height, 44px);
+				}
+
+				img {
+					top: 60px;
+				}
+			}
+
+			&.thumper-220 {
+				padding-top: 239px;
+				@include rem(font-size, 38px);
+				@include rem(line-height, 41px);
+
+				.large {
+					@include rem(font-size, 40px);
+				}
+
+				.xlarge {
+					@include rem(font-size, 87px);
+					@include rem(line-height, 42px);
+				}
+
+				img {
+					top: 60px;
+				}
+			}
+
+			&.thumper-240 {
+				padding-top: 239px;
+				@include rem(font-size, 32px);
+				@include rem(line-height, 39px);
+
+				.large {
+					@include rem(font-size, 38px);
+					@include rem(line-height, 43px);
+				}
+
+				.xlarge {
+					@include rem(font-size, 87px);
+					@include rem(line-height, 42px);
+				}
+
+				img {
+					top: 50px;
+				}
+			}
+
+			p {
+				color: $a4-grey-rule;
+				font-family: $font-oswald;
+				text-transform: uppercase;
+				text-align: center;
+
+				.lower {
+					text-transform: lowercase;
+				}
+			}
+		}
+	}
+}

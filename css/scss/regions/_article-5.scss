@@ -1,0 +1,39 @@
+// Article 5
+
+.article-5 {
+	color: $white;
+	background-color: $a5-light-brown;
+
+	h3 {
+		@include rem(font-size, 49px);
+		@include rem(line-height, 60px);
+		font-family: $font-oswald;
+		text-transform: uppercase;
+		background-color: $a5-brown;
+		text-align: center;
+		padding: 27px 0;
+	}
+		
+	img {
+		max-width: 100%;
+	}
+
+	.figcaption {
+		padding: 22px 22px 30px;
+		@include rem(font-size, 26px);
+		@include rem(line-height, 35px);
+		font-family: $font-merriweather;
+		font-weight: 300;
+	}
+
+	.resource {
+		display: block;
+		@include rem(font-size, 18px);
+		color: $a5-grey;
+		margin-top: 35px;
+
+		&:hover, &:focus {
+			color: $white;
+		}
+	}
+}

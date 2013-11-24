@@ -1,5 +1,30 @@
 //Footer
 
-.footer-wrap {
-	background-color: $dark-pink;
+.footer {
+	border-top: 1px solid $footer-grey-rule;
+	padding: 20px 0 60px;
+
+	small {
+		font-family: $font-lato;
+		@include rem(font-size, 17px);
+		@include rem(line-height, 26px);
+		color: $footer-grey;
+	}
+
+	.highlight, .p-name {
+		color: $footer-dark-grey;
+	}
+
+	small {
+		float: left;
+	}
+
+	.h-card {
+		float: right;
+		text-align: right;
+		font-family: $font-merriweather;
+		@include rem(font-size, 13px);
+		@include rem(line-height, 19px);
+		color: $footer-grey;
+	}
 }

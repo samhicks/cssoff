@@ -1,0 +1,155 @@
+// Article 7
+
+.article-7 {
+	padding: 13px 0 0 13px;
+	position: relative;
+
+	&:after {
+		content: '';
+		width: 27px;
+		height: 27px;
+		border-radius: 50%;
+		background-color: $white;
+		position: absolute;
+		left: 47%;
+		bottom: -14px;
+	}
+	
+	.inner {
+		padding: 198px 0 28px;
+		background-color: $a7-blue;
+		color: $white;
+		position: relative;
+
+		img {
+			position: absolute;
+			top: -65px;
+			left: -30px;
+		}
+	}
+
+	.pad {
+		padding: 0 12px;
+	}
+
+	h4 {
+		@include rem(font-size, 21px);
+		@include rem(line-height, 30px);
+		font-family: $font-oswald;
+		text-transform: uppercase;
+		padding-bottom: 15px;
+		border-bottom: 9px solid $a7-light-blue;
+		margin-bottom: 15px;
+
+		.large {
+			@include rem(font-size, 31px);
+		}
+	}
+
+	.overview {
+		@include rem(font-size, 16px);
+		@include rem(line-height, 24px);
+		font-family: $font-lora;
+		font-weight: 400;
+		font-style: italic;
+		margin-bottom: 20px;
+	}
+
+	.hr-dash {
+		border-style: dashed none solid;
+		border-color: $a7-dark-blue transparent $a7-mid-blue;
+		border-width: 2px 0 5px;
+	}
+
+	.rotten {
+		@include rem(font-size, 14px);
+		@include rem(line-height, 29px);
+		font-family: $font-oswald;
+		text-transform: uppercase;
+		color: $a7-light-blue;
+
+		.rating {
+			@include rem(font-size, 32px);
+			display: block;
+			margin-bottom: 19px;
+		}
+
+		.percentage {
+			@include rem(font-size, 54px);
+			@include rem(line-height, 65px);
+			color: $white;
+			float: right;
+
+			.unit {
+				background: transparent url('../images/percentage.png') 0 0 no-repeat;
+				@extend .inline-block;
+				text-indent: -9999px;
+				width: 39px;
+				height: 41px;
+				overflow: hidden;
+			}
+		}
+	}
+
+	.hr-solid {
+		border-style: solid none dashed;
+		border-color: $a7-mid-blue transparent $a7-dark-blue;
+		border-width: 5px 0 2px;
+		margin-bottom: 19px;
+	}
+
+	.bar-graph {
+		display: block;
+		background-color: $a7-light-blue;
+		margin-bottom: 22px;
+
+		.twenty-percent-rot {
+			display: block;
+			width: 20%;
+			height: 8px;
+			background-color: $white;
+		}
+	}
+
+	.event {
+		font-family: $font-oswald;
+		text-transform: uppercase;
+		text-align: center;
+
+		h5 {
+			color: $a7-light-blue;
+			@include rem(font-size, 14px);
+			@include rem(line-height, 14px);
+			background-color: $a7-light-blue;
+			margin-bottom: 5px;
+
+			span {
+				background-color: $a7-blue;
+				padding: 0 10px;
+			}
+		}
+
+		.p-location {
+			display: block;
+		}
+
+		.p-name {
+			@include rem(font-size, 27px);
+			@include rem(line-height, 33px);
+			color: $white;
+		}
+
+		.p-country-name {
+			@include rem(font-size, 28px);
+			@include rem(line-height, 34px);
+			color: $a7-light-blue;
+			display: block;
+		}
+
+		.dt-start {
+			@include rem(font-size, 39px);
+			@include rem(line-height, 43px);
+			color: $white;
+		}
+	}
+}

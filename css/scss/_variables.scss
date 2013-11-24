@@ -5,36 +5,12 @@ $white: #fff;
 $black: #000;
 
 // Typography
-$body-font-size: 16px; 
-$body-line-height: 26px;
-
-$body-secondary-font-size: 19px; 
-$body-secondary-line-height: 30px;
-
-$heading-primary-font-size: 73px; 
-$heading-primary-line-height: 73px;
-
-$heading-secondary-font-size: 25px; 
-$heading-secondary-line-height: 30px;
-
-$heading-tertiary-font-size: 18px;
-$heading-tertiary-line-height: 22px;
-
 $font-lora: 'Lora', "Palatino Linotype", "Book Antiqua", Palatino, serif;
 $font-merriweather: 'Merriweather', "Palatino Linotype", "Book Antiqua", Palatino, serif;
 $font-oswald: 'Oswald', "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-lato: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$body-font: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-// Margin
-$spacing: $body-line-height;
-$spacing-l: 45px;
-$spacing-m: 30px;
-$spacing-s: 14px;
-$spacing-xs: 7px;
 
 // Break Points
-$break-tablet-landscape: 1000px;
 $break-tablet-portrait: 768px;
 $break-mobile-landscape: 480px;
 

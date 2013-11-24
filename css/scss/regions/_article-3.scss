@@ -1,0 +1,27 @@
+// Article 3
+
+.article-3 {
+	text-align: right;
+	padding: 0 18px 195px 15px;
+	position: relative;
+
+	h4 {
+		font-family: $font-oswald;
+		@include rem(font-size, 21px);
+		color: $a3-green;
+		margin-bottom: 12px;
+	}
+
+	p {
+		font-family: $font-lato;
+		@include rem(font-size, 14px);
+		@include rem(line-height, 19px);
+		color: $a3-grey;
+	}
+
+	img {
+		position: absolute;
+		left: 7px;
+		bottom: -20px;
+	}
+}
