@@ -25,3 +25,15 @@
 		bottom: -20px;
 	}
 }
+
+/* Mobile and Tablet */
+@media (max-width: 940px) {
+
+	.grid {
+		.article-3 {
+			width: 100%;
+			padding: 0 18px 45px 170px;
+			text-align: left;
+		}
+	}
+}

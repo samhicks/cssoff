@@ -1,9 +1,5 @@
 // Variables
 
-// Colors
-$white: #fff;
-$black: #000;
-
 // Typography
 $font-lora: 'Lora', "Palatino Linotype", "Book Antiqua", Palatino, serif;
 $font-merriweather: 'Merriweather', "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -11,16 +7,18 @@ $font-oswald: 'Oswald', "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-lato: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Break Points
+$max-page-width: 1000px;
 $break-tablet-portrait: 768px;
 $break-mobile-landscape: 480px;
 
-// Page Width
-$max-page-width: 960px;
+// Colors
+$white: #fff;
+$black: #000;
 
 // Article 1
 $a1-purple-heading: #5f5d66;
 $a1-purple-body: #6e6c77;
-$a1-light-purple: #cdc9dd;
+$a1-light-purple: #cdc9dd;		
 
 // Article 2
 $a2-beige: #cbb8a0;

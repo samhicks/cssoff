@@ -1,5 +1,11 @@
 // Style
 
+// Fonts
+@import url(http://fonts.googleapis.com/css?family=Lora:700italic,400italic);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:900,400,300);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,400);
+
 // Mixins
 @import "mixins/fonts";
 @import "mixins/transition";
@@ -10,7 +16,6 @@
 @import "reset";
 @import "variables";
 @import "main";
-@import "typography";
 @import "layout";
 
 // Objects

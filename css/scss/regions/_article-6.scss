@@ -7,19 +7,21 @@
 	h3, h4 {
 		font-family: $font-oswald;
 		@include rem(line-height, 79px);
+		border-bottom-style: solid;
+		border-bottom-color: $black;
 	}
 
 	h3 {
 		text-transform: uppercase;
 		@include rem(font-size, 82px);
 		padding-bottom: 20px;
-		border-bottom: 20px solid $black;
+		border-bottom-width: 20px;
 	}
 
 	h4 {
 		@include rem(font-size, 39px);
 		@include rem(line-height, 55px);
-		border-bottom: 3px solid $black;
+		border-bottom-width: 3px;
 		margin-bottom: 16px;
 		padding: 10px 0 12px;
 	}
@@ -59,6 +61,16 @@
 
 		b {
 			font-weight: 900;
+		}
+	}
+}
+
+/* Mobile and Tablet */
+@media (max-width: 780px) {
+
+	.grid {
+		.article-6 {
+			width: 100%;
 		}
 	}
 }

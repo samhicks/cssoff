@@ -19,24 +19,24 @@
 			position: absolute;
 			z-index: 2;
 			top: 370px;
-		}
 
-		h6, h2 {
-			text-transform: uppercase;
-		}
+			h6, h2 {
+				text-transform: uppercase;
+			}
 
-		h6 {
-			font-family: $font-merriweather;
-			@include rem(font-size, 13px);
-			color: $a2-beige;
-		}
+			h6 {
+				font-family: $font-merriweather;
+				@include rem(font-size, 13px);
+				color: $a2-beige;
+			}
 
-		h2 {
-			font-family: $font-oswald;
-			@include rem(font-size, 75px);
-			@include rem(line-height, 79px);
-			color: $a2-mustard;
-			margin-bottom: 28px;
+			h2 {
+				font-family: $font-oswald;
+				@include rem(font-size, 75px);
+				@include rem(line-height, 79px);
+				color: $a2-mustard;
+				margin-bottom: 28px;
+			}
 		}
 	}
 
