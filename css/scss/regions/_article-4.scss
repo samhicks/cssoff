@@ -23,6 +23,7 @@
 
 	.bullet-list {
 		@extend .clearfix;
+		margin-bottom: 15px;
 
 		li {
 			border-right: 1px solid $a4-grey-rule;
@@ -42,6 +43,10 @@
 				font-family: $font-oswald;
 				text-transform: uppercase;
 				text-align: center;
+
+				.large, .xlarge {
+					display: block;
+				}
 
 				.lower {
 					text-transform: lowercase;
@@ -64,6 +69,7 @@
 
 				.xlarge {
 					@include rem(font-size, 79px);
+					@include rem(line-height, 79px);
 				}
 			}
 
@@ -82,7 +88,7 @@
 			}
 
 			&.russian {
-				padding-top: 250px;
+				padding-top: 276px;
 				@include rem(font-size, 31px);
 				@include rem(line-height, 45px);
 
@@ -97,7 +103,7 @@
 				}
 
 				img {
-					top: 60px;
+					top: 75px;
 				}
 			}
 
@@ -112,382 +118,32 @@
 
 				.xlarge {
 					@include rem(font-size, 87px);
-					@include rem(line-height, 42px);
+					@include rem(line-height, 86px);
 				}
 
 				img {
-					top: 60px;
+					top: 75px;
 				}
 			}
 
 			&.thumper-240 {
-				padding-top: 239px;
+				padding-top: 236px;
 				@include rem(font-size, 32px);
 				@include rem(line-height, 39px);
 
 				.large {
 					@include rem(font-size, 38px);
 					@include rem(line-height, 43px);
+					display: block;
 				}
 
 				.xlarge {
 					@include rem(font-size, 87px);
-					@include rem(line-height, 42px);
+					@include rem(line-height, 86px);
 				}
 
 				img {
-					top: 50px;
-				}
-			}
-		}
-	}
-}
-
-/* Mobile and Tablet */
-@media (max-width: 940px) {
-
-	.grid {
-
-		.article-4 {
-			width: 100%;
-		}
-	}
-}
-
-@media (max-width: 790px) {
-
-	.article-4 {
-
-		.bullet-list {
-
-			li {
-
-				&.remington, &.winchester, &.russian {
-					width: 33.333%;
-
-					img {
-						left: 35%;
-					}
-				}
-
-				&.thumper-220, &.thumper-240 {
-					width: 50%;
-
-					img {
-						left: 35%;
-					}
-				}
-
-				&.remington, &.winchester {
-					@include rem(font-size, 38px);
-					@include rem(line-height, 44px);
-
-					.large {
-						@include rem(font-size, 43px);
-						@include rem(line-height, 47px);
-					}
-
-					.xlarge {
-						@include rem(font-size, 105px);
-					}
-				}
-
-				&.russian {
-					@include rem(font-size, 40px);
-
-					.large {
-						@include rem(font-size, 49px);
-						@include rem(line-height, 51px);
-					}
-
-					.xlarge {
-						@include rem(font-size, 51px);
-						@include rem(line-height, 55px);
-					}
-
-					img {
-						top: 60px;
-					}
-				}
-
-				&.thumper-220 {
-					@include rem(font-size, 53px);
-					@include rem(line-height, 55px);
-
-					.large {
-						@include rem(font-size, 56px);
-						display: block;
-					}
-
-					.xlarge {
-						@include rem(font-size, 127px);
-					}
-				}
-
-				&.thumper-240 {
-					@include rem(font-size, 45px);
-					@include rem(line-height, 68px);
-
-					.large {
-						@include rem(font-size, 56px);
-						display: block;
-					}
-
-					.xlarge {
-						@include rem(font-size, 127px);
-					}
-				}
-			}
-		}
-	}
-}
-
-/* Mobile and Tablet */
-@media (max-width: 640px) {
-
-	.article-4 {
-
-		.bullet-list {
-
-			li {
-
-				&.remington, &.winchester, &.russian {
-					padding-top: 270px;
-					width: 33.333%;
-
-					img {
-						left: 22%;
-					}
-				}
-
-				&.remington, &.winchester {
-					@include rem(font-size, 23px);
-					@include rem(line-height, 28px);
-
-					.large {
-						@include rem(font-size, 26px);
-						@include rem(line-height, 29px);
-						display: block;
-					}
-
-					.xlarge {
-						@include rem(font-size, 65px);
-					}
-				}
-
-				&.russian {
-					@include rem(font-size, 22px);
-					@include rem(line-height, 29px);
-
-					.large {
-						@include rem(font-size, 28px);
-						@include rem(line-height, 30px);
-						display: block;
-					}
-
-					.xlarge {
-						@include rem(font-size, 29px);
-						@include rem(line-height, 29px);
-					}
-
-					img {
-						top: 60px;
-					}
-				}
-
-				&.thumper-220 {
-					@include rem(font-size, 28px);
-					@include rem(line-height, 63px);
-					padding: 70px 15px;
-
-					p {
-						text-align: right;
-					}
-
-					img {
-						left: 0;
-						top: 10%
-					}
-
-					.large {
-						@include rem(font-size, 30px);
-						@include rem(line-height, 6px);	
-					}
-
-					.xlarge {
-						@include rem(font-size, 70px);
-						display: block;
-					}
-				}
-
-				&.thumper-240 {
-					@include rem(font-size, 24px);
-					@include rem(line-height, 0px);
-					padding: 70px 15px;
-
-					p {
-						text-align: right;
-					}
-
-					img {
-						left: 10px;
-						top: 0;
-					}
-
-					.large {
-						@include rem(font-size, 30px);
-						@include rem(line-height, 64px);	
-					}
-
-					.xlarge {
-						@include rem(font-size, 70px);
-						display: block;
-					}
-				}
-			}
-		}
-	}
-}
-
-/* Mobile and Tablet */
-@media (max-width: 400px) {
-
-	.article-4 {
-
-		h4 {
-
-			.sub {
-				display: block;
-				margin-top: 10px;
-			}
-		}
-
-		.bullet-list {
-
-			li {
-
-				&.remington, &.winchester, &.russian, &.thumper-220, &.thumper-240 {
-					width: 100%%;
-					border-right: none;
-					border-bottom: 1px solid $a4-grey-rule;
-
-					img {
-						left: 10px;
-						top: 0;
-					}
-
-					p {
-						text-align: right;
-					}
-				}
-
-				&.remington, &.winchester {
-					@include rem(font-size, 22px);
-					@include rem(line-height, 48px);
-
-					img {
-						top: -25px;
-					}
-
-					.large {
-						@include rem(font-size, 25px);
-						@include rem(line-height, 14px);
-						display: block;
-					}
-
-					.xlarge {
-						@include rem(font-size, 64px);
-						display: block;
-					}
-				}
-
-				&.remington {
-					padding: 20px 30px 40px;
-				}
-
-				&.winchester {
-					padding: 35px 30px 40px;
-
-					p {
-						text-align: left;
-					}
-
-					img {
-						left: 70%;
-						top: -40px;
-						z-index: 2;
-					}
-				}
-
-				&.russian {
-					padding: 35px 30px 40px;
-					@include rem(font-size, 24px);
-
-					.large {
-						@include rem(font-size, 30px);
-						@include rem(line-height, 37px);
-						display: block;
-					}
-
-					.xlarge {
-						@include rem(font-size, 31px);
-						@include rem(line-height, 34px);
-						display: block;
-					}
-
-					img {
-						top: -20px;
-					}
-				}
-
-				&.thumper-220 {
-					padding: 40px 30px 50px;
-					@include rem(font-size, 28px);
-					@include rem(line-height, 63px);
-
-					p {
-						text-align: left;
-					}
-
-					img {
-						left: 70%;
-						top: -10px;
-					}
-
-					.large {
-						@include rem(font-size, 30px);
-						@include rem(line-height, 6px);	
-					}
-
-					.xlarge {
-						@include rem(font-size, 70px);
-						display: block;
-					}
-				}
-
-				&.thumper-240 {
-					padding: 40px 30px 50px;
-					@include rem(font-size, 24px);
-					@include rem(line-height, 0px);
-
-					p {
-						text-align: right;
-					}
-
-					img {
-						left: 0px;
-						top: -20px;
-					}
-
-					.large {
-						@include rem(font-size, 30px);
-						@include rem(line-height, 64px);	
-					}
-
-					.xlarge {
-						@include rem(font-size, 70px);
-						display: block;
-					}
+					top: 75px;
 				}
 			}
 		}

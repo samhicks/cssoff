@@ -1,17 +1,17 @@
 // Article 8
 
 .article-8 {
-	margin-bottom: 60px;
 	position: relative;
 	padding-top: 160px;
+	max-width: 1058px;
+	margin: 0 auto 60px;
 
 	.overflow-head {
-		background: transparent url('../images/overflow-bkg.png') 0 center no-repeat;
+		background: transparent url('../images/overflow-bkg.png') 0 0 no-repeat;
 		position: absolute;
 		top: -25px;
 		height: 311px;
-		width: 1058px;
-		left: -23px;
+		width: 100%;
 		padding-top: 100px;
 		@include box-sizing(border-box);
 
@@ -24,61 +24,48 @@
 			margin-left: 62px;
 			margin-bottom: 10px;
 			background: -webkit-linear-gradient($a8-blue, transparent);
+			color: $a8-blue;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 		}
 	}
 
-	p {
-		font-family: $font-lora;
-		@include rem(font-size, 16px);
-		@include rem(line-height, 26px);
-		font-style: italic;
-		color: $a8-grey;
-		margin-bottom: 15px;
-
-		b {
-			font-weight: 700;
-		}
-
-		&.para-1 {
-			text-align: right;
-			@include transform(2deg);
-			width: 77%;
-			float: right;
-		}
-
-		&.para-2 {
-			clear: right;
-			@include transform(-1deg);
-			width: 71%;
-			margin: 0 0 30px 20px;
-		}
-
-		&.para-3 {
-			@include transform(1deg);
-			width: 80%;
-			margin-left: 145px;
-		}
-	}
-}
-
-/* Mobile and Tablet */
-@media (max-width: 625px) {
-
-	.article-8 {
-		padding: 160px 30px 10px;
+	.body {
+		max-width: 960px;
+		margin: 0 auto;
+		@include box-sizing(border-box);
+		padding: 0 20px;
 
 		p {
+			font-family: $font-lora;
+			@include rem(font-size, 16px);
+			@include rem(line-height, 26px);
+			font-style: italic;
+			color: $a8-grey;
+			margin-bottom: 15px;
 
-			&.para-1, &.para-2, &.para-3 {
-				width: 100%;
-				margin-right: 0;
-				margin-left: 0;
+			b {
+				font-weight: 700;
 			}
 
-			&.para-1, &.para-2 {
-				margin-bottom: 35px;
+			&.para-1 {
+				text-align: right;
+				@include transform(2deg);
+				width: 77%;
+				float: right;
+			}
+
+			&.para-2 {
+				clear: right;
+				@include transform(-1deg);
+				width: 71%;
+				margin-bottom: 30px;
+			}
+
+			&.para-3 {
+				@include transform(1deg);
+				width: 80%;
+				margin-left: 145px;
 			}
 		}
 	}

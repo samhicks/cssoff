@@ -13,16 +13,31 @@
 		text-align: center;
 		padding: 27px 0;
 	}
-		
-	img {
-		max-width: 100%;
-	}
 
-	a {
-		text-decoration: none;
+	.img-wrap {
+		position: relative;
 
-		&:hover, &:focus {
-			transition: 0.1s;
+		img {
+			max-width: 100%;
+			display: block;
+		}
+
+		.page-curl {
+			width: 130px;
+			height: 130px;
+			transition: 0.3s;
+			background: $a5-brown url('../images/map-corner.jpg') 0 0 no-repeat;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			text-indent: -9999px;
+			overflow: hidden;
+
+			&:hover, &:focus {
+				 border-radius: 40% / 100% 0 0 0;
+				 transition: 0.6s;
+				 cursor: pointer;
+			}
 		}
 	}
 
@@ -39,35 +54,11 @@
 		@include rem(font-size, 18px);
 		color: $a5-grey;
 		margin-top: 35px;
+		text-decoration: none;
 
 		&:hover, &:focus {
 			color: $white;
-		}
-	}
-}
-
-/* Mobile and Tablet */
-@media (max-width: 550px) {
-
-	.article-5-wrap {
-		padding: 0;
-
-		.article-5 {
-
-			h3 {
-				@include rem(font-size, 40px);
-				@include rem(line-height, 47px);
-			}
-
-			.figcaption {
-				@include rem(font-size, 21px);
-				@include rem(line-height, 31px);
-			}
-
-			.resource {
-				@include rem(font-size, 15px);
-				margin-top: 25px;
-			}
+			transition: 0.1s;
 		}
 	}
 }

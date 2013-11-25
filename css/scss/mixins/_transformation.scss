@@ -2,6 +2,6 @@
 
 @mixin transform ($rotation) {
 		transform:rotate($rotation);
-	-ms-transform:rotate($rotation); /* IE 9 */
--webkit-transform:rotate($rotation); /* Safari and Chrome */
+	-ms-transform:rotate($rotation); // IE 9 
+-webkit-transform:rotate($rotation); // Safari and Chrome
 }
