@@ -1,8 +1,12 @@
 //Footer
 
 .footer {
-	border-top: 1px solid $footer-grey-rule;
-	padding: 20px 0 60px;
+	padding-bottom: 60px;
+
+	.col-12 {
+		border-top: 1px solid $footer-grey-rule;
+		padding-top: 20px;
+	}
 
 	small {
 		font-family: $font-lato;
@@ -33,6 +37,19 @@
 
 		b {
 			font-weight: 900;
+		}
+	}
+}
+
+/* Mobile and Tablet */
+@media (max-width: 400px) {
+
+	.footer {
+		padding-left: 30px;
+		padding-right: 30px;
+
+		.vcard {
+			margin-top: 20px;
 		}
 	}
 }
